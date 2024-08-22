@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function guess(guessedNumber) {
+        var randomNumber = Math.floor(Math.random() * 10) + 1;
+        if (randomNumber == guessedNumber) {
+          alert("Your Guess is Right");
+        } else {
+          alert(
+            "Your Guess is wrong, Generated Random Number is : " + randomNumber
+          );
+        }
+      }
+
+      var guessedNumber = prompt("Guess the Number");
+
+      guess(guessedNumber);
+    </script>
+  </body>
+</html>
